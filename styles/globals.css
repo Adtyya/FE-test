@@ -29,3 +29,17 @@ body {
 .this-container{
   @apply w-full max-w-6xl mx-auto;
 }
+
+.hamburger-line{
+  @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+.hamburger-active > span:nth-child(1){
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(3){
+  @apply -rotate-45;
+}
+.hamburger-active > span:nth-child(2){
+  @apply scale-0;
+}
+ 
