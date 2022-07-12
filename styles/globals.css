@@ -42,4 +42,9 @@ body {
 .hamburger-active > span:nth-child(2){
   @apply scale-0;
 }
- 
+.input-cs{
+  @apply pl-7 pr-2 py-1 focus:outline-none;
+}
+.paragh{
+  @apply text-black text-opacity-80;
+}

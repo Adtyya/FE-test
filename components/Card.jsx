@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ image, title, excerpt, date, tags }) => {
   return (
-    <div className="w-full h-auto p-2">
+    <div className="w-full h-auto p-2 lg:hover:scale-105 transition-all duration-300">
       <div className="flex flex-col space-y-1">
         <img
           src={image}
