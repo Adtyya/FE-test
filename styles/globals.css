@@ -1,16 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  h1{
+    @apply text-4xl;
+  },
+  h2{
+    @apply text-3xl;
+  },
+  h3{
+    @apply text-2xl;
+  }
+}
+
+.this-container{
+  @apply w-full max-w-6xl mx-auto;
 }
