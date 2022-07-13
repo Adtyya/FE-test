@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Home from "../components/Home/Home";
+import Home from "../components/Screen/Home";
 import Footer from "../components/Footer";
 import fetchApi from "../lib/api";
 
