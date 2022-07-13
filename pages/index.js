@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import fetchApi from "../lib/api";
 
 const index = ({ articles }) => {
-  React.useEffect(() => {
-    console.log(articles);
-  }, []);
+  // React.useEffect(() => {
+  //   console.log(articles);
+  // }, []);
   return (
     <>
       <Navbar />

@@ -57,3 +57,9 @@ body {
 .line{
   @apply w-full h-[1px] rounded-lg bg-black bg-opacity-50;
 }
+.pagination-cs{
+  @apply list-none cursor-pointer mx-2 px-2 py-1 text-yellow-custom text-sm  w-full max-w-[30px] text-center rounded-lg;
+}
+.outline-active{
+@apply outline outline-1 outline-yellow-custom
+}

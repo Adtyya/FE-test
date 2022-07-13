@@ -48,7 +48,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul className={`${myStyle}`} id="list-nav">
-          <li className="inline-block text-md mx-3">Home</li>
+          <li className="inline-block text-md mx-3 text-yellow-custom">Home</li>
           <li className="inline-block text-md mx-3">Articles</li>
         </ul>
       </div>

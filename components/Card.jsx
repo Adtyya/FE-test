@@ -3,13 +3,13 @@ import formatDate from "../lib/dateFormatter";
 
 const Card = ({ image, title, excerpt, date, tags, ori }) => {
   return (
-    <div className="w-full h-auto p-2 lg:hover:scale-105 transition-all duration-300">
+    <div className="w-full h-auto p-2 lg:hover:scale-105 transition-all duration-300 cursor-pointer">
       <div className="flex flex-col space-y-1">
         <img
           src={
             image
               ? image
-              : "https://images.unsplash.com/photo-1649859398731-d3c4ebca53fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+              : "https://images.unsplash.com/photo-1657543965889-62f45f4cc127?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
           }
           alt={title}
           className="w-full max-h-[260px] h-full rounded-lg mb-3 object-cover"
@@ -26,7 +26,11 @@ const Card = ({ image, title, excerpt, date, tags, ori }) => {
         </p>
         <p className="text-md text-black text-opacity-70">{excerpt}</p>
       </div>
-      <a href={ori} className="text-md text-yellow-custom cursor-pointer">
+      <a
+        href={ori}
+        className="text-md text-yellow-custom cursor-pointer"
+        rel="nofollow"
+      >
         Read More
       </a>
     </div>
