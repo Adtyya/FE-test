@@ -10,17 +10,19 @@ const Footer = () => {
           <h1 className="bg-yellow-custom text-white py-1 px-3 font-bold rounded-[16px]">
             S
           </h1>
-          <h3 className="pl-2 text-yellow-custom font-normal">SerbaSerbi</h3>
+          <h3 className="pl-2 text-yellow-custom text-2xl font-normal">
+            SerbaSerbi
+          </h3>
         </div>
         <div className="flex flex-row justify-start space-x-10 w-3/4">
           <div className="flex flex-col w-auto">
-            <h3 className="pb-4 font-semibold text-black text-opacity-70">
+            <h3 className="pb-4 font-semibold text-lg text-black text-opacity-70">
               Menu
             </h3>
             <p className="text-sm paragh">Home</p>
           </div>
           <div className="flex flex-col w-auto">
-            <h3 className="pb-4 font-semibold text-black text-opacity-70">
+            <h3 className="pb-4 font-semibold text-lg text-black text-opacity-70">
               Bantuan
             </h3>
             <p className="text-sm mb-1 paragh">Pusat Bantuan</p>
