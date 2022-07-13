@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import DetailArticle from "../../components/Screen/DetailArticle";
 import Footer from "../../components/Footer";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const DetailArticles = () => {
   const router = useRouter();
@@ -14,6 +15,9 @@ const DetailArticles = () => {
 
   return (
     <div>
+      <Head>
+        <title>Read</title>
+      </Head>
       <Navbar />
       <DetailArticle title={read} />
       <Footer />

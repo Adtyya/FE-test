@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Home from "../components/Screen/Home";
 import Footer from "../components/Footer";
 import fetchApi from "../lib/api";
+import Head from "next/head";
 
 const index = ({ articles }) => {
   // React.useEffect(() => {
@@ -10,6 +11,9 @@ const index = ({ articles }) => {
   // }, []);
   return (
     <>
+      <Head>
+        <title>Serba serbi</title>
+      </Head>
       <Navbar />
       <Home articles={articles} />
       <Footer />
