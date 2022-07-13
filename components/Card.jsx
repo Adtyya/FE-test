@@ -15,7 +15,7 @@ const Card = ({ image, title, excerpt, date, tags, ori }) => {
           className="w-full max-h-[260px] h-full rounded-lg mb-3 object-cover"
         />
         <h3 className="text-black text-opacity-80">{title}</h3>
-        <p className="text-md text-black text-opacity-50">{formatDate(date)}</p>
+        <p className="text-sm text-black text-opacity-50">{formatDate(date)}</p>
         <p className="text-sm text-black text-opacity-70 flex flex-warp gap-2 flex-row items-center justify-start">
           {tags &&
             tags.map((el, i) => (
