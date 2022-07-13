@@ -17,7 +17,9 @@ const Card = ({ image, title, excerpt, date, tags, ori }) => {
             alt={title}
             className="w-full max-h-[260px] h-full rounded-lg mb-3 object-cover"
           />
-          <h3 className="text-black text-opacity-80 font-semibold">{title}</h3>
+          <h3 className="text-black text-opacity-80 font-semibold text-lg">
+            {title}
+          </h3>
           <p className="text-sm text-black text-opacity-50">
             {formatDate(date)}
           </p>
