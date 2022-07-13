@@ -59,17 +59,15 @@ const Home = ({ articles }) => {
           .filter(searchTerm)
           .slice(indexFirstArticles, lastIndexArticles)
           .map((el, i) => (
-            <>
-              <Card
-                title={el.title}
-                image={el.urlToImage}
-                excerpt={el.excerpt}
-                date={el.publishedAt}
-                tags={el.tags}
-                ori={el.url}
-                key={i}
-              />
-            </>
+            <Card
+              title={el.title}
+              image={el.urlToImage}
+              excerpt={el.excerpt}
+              date={el.publishedAt}
+              tags={el.tags}
+              ori={el.url}
+              key={i}
+            />
           ))}
       </div>
       <Pagination
